@@ -16,7 +16,8 @@ AT24C256 eeprom : https://github.com/dantudose/AT24C256
 DM556 parameters (1.8°, 200 steps/rev, Pulse +, Direction +, Enable +, neg - common gnd.)
 µsteps : 25600 pulse/rev (SW5 off, SW6 off, SW7 off, SW8 on). 
 Current Amps 3.2 amps : (SW1 off, SW2 off, SW3 on). Half Current on : (SW4 off).  
-firth set your Latitude and Longitude end on line 336 of RP2040zSunTracker.ino file.
+firth set your Latitude and Longitude end on line 214 of RP2040zSunTracker.ino file.
 all other set can be via BLE.
+
 RP2040zSuntracker v1.2 Board jpeg
 ![image](https://github.com/user-attachments/assets/3cad70b5-b918-4e9c-ba21-e61c066d7ed4)
