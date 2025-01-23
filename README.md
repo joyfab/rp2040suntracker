@@ -15,12 +15,17 @@ AccelStepper : http://www.airspayce.com/mikem/arduino/AccelStepper/
 AT24C256 eeprom : https://github.com/dantudose/AT24C256
 DM556 parameters (1.8°, 200 steps/rev, Pulse +, Direction +, Enable +, neg - common gnd.)
 µsteps : 25600 pulse/rev (SW5 off, SW6 off, SW7 off, SW8 on). 
-Current Amps 3.2 amps : (SW1 off, SW2 off, SW3 on). Half Current on : (SW4 off).  
+Current 3.2 amps : (SW1 off, SW2 off, SW3 on). Half Current on : (SW4 off).  
 firth set your Latitude and Longitude end on line 214 of RP2040zSunTracker.ino file.
-all other set can be via BLE.
-
-RP2040zSuntracker v1.2 Board jpeg
+Then, all other set can be via BLE.
+Gerber files : https://github.com/joyfab/rp2040suntracker/blob/main/RP2040SunTrackerv1_2.zip
+Eagle schematic : https://github.com/joyfab/rp2040suntracker/blob/main/Suntracker_v1_2.sch
+RP2040zSuntracker v1.2 Board jpeg :
 ![image](https://github.com/user-attachments/assets/3cad70b5-b918-4e9c-ba21-e61c066d7ed4)
+Schematic PDF :
+[Suntracker_v1_2.pdf](https://github.com/user-attachments/files/18523705/Suntracker_v1_2.pdf)
+DM556 settings jpeg :
+![image](https://github.com/user-attachments/assets/cc5adb75-eb93-43c8-a2e7-4259ade92ec9)
 
-DM556 settings jpeg
-![image](https://github.com/user-attachments/assets/379c1c5f-5f35-40aa-91ba-b7f474d75baf)
+
+
