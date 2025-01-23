@@ -21,3 +21,6 @@ all other set can be via BLE.
 
 RP2040zSuntracker v1.2 Board jpeg
 ![image](https://github.com/user-attachments/assets/3cad70b5-b918-4e9c-ba21-e61c066d7ed4)
+
+DM556 settings jpeg
+![image](https://github.com/user-attachments/assets/379c1c5f-5f35-40aa-91ba-b7f474d75baf)
