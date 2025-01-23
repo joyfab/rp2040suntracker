@@ -37,12 +37,15 @@ Gerber files : https://github.com/joyfab/rp2040suntracker/blob/main/RP2040SunTra
 Eagle schematic : https://github.com/joyfab/rp2040suntracker/blob/main/Suntracker_v1_2.sch
 
 Schematic PDF :
+
 [Suntracker_v1_2.pdf](https://github.com/user-attachments/files/18523705/Suntracker_v1_2.pdf)
 
 RP2040zSuntracker v1.2 Board jpeg :
+
 ![image](https://github.com/user-attachments/assets/3cad70b5-b918-4e9c-ba21-e61c066d7ed4)
 
-DM556 settings jpeg :
+DM556 wirering and settings :
+
 ![image](https://github.com/user-attachments/assets/cc5adb75-eb93-43c8-a2e7-4259ade92ec9)
 
 
