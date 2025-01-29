@@ -171,12 +171,6 @@ void XHoming() {
   stepper1.stop();
   stepper1.runToPosition();
   stepper1.setCurrentPosition(0);
-  stepper1.moveTo(1000000);
-  while (digitalRead(SWX) == LOW)
-    stepper1.run();
-  stepper1.stop();
-  stepper1.runToPosition();
-  stepper1.setCurrentPosition(0);
   stepper1.setAcceleration(10000.0);
   stepper1.moveTo(0);
   stepper1.runToPosition();
@@ -185,12 +179,6 @@ void YHoming() {
   stepper2.setAcceleration(40000.0);
   stepper2.moveTo(-3000000);
   while (digitalRead(SWY) == HIGH)
-    stepper2.run();
-  stepper2.stop();
-  stepper2.runToPosition();
-  stepper2.setCurrentPosition(0);
-  stepper2.moveTo(1000000);
-  while (digitalRead(SWY) == LOW)
     stepper2.run();
   stepper2.stop();
   stepper2.runToPosition();
@@ -253,22 +241,20 @@ void track() { // for Paris:long 2°20'54.20"E,lat 45°51'12.58"N => 2.34839,48.
     tft.print(AzReach, 0);
     tft.setCursor(105, 43);
     tft.print(ElReach, 0);
-    if (Clock.getSecond() >= 0) {
-      pixels.clear();
-      pixels.setPixelColor(0, pixels.Color(0, 0, 5));
-      pixels.show();
-      stepper1.moveTo(xReach);
-      stepper1.runToPosition();
-      delay(20);
-      lastx == AzReach;
-      stepper2.moveTo(yReach);
-      stepper2.runToPosition();
-      delay(20);
-      lasty == ElReach;
-      pixels.clear();
-      pixels.setPixelColor(0, pixels.Color(0, 1, 0));
-      pixels.show();
-    }
+    pixels.clear();
+    pixels.setPixelColor(0, pixels.Color(0, 0, 5));
+    pixels.show();
+    stepper1.moveTo(xReach);
+    stepper1.runToPosition();
+    delay(20);
+    lastx == AzReach;
+    stepper2.moveTo(yReach);
+    stepper2.runToPosition();
+    delay(20);
+    lasty == ElReach;
+    pixels.clear();
+    pixels.setPixelColor(0, pixels.Color(0, 1, 0));
+    pixels.show();
   }
   if (HoDow == 0)                // Daily Homing
     if (Clock.getHour(h12, PM) == HoHour)
