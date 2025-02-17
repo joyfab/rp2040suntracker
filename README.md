@@ -25,8 +25,12 @@ AccelStepper : http://www.airspayce.com/mikem/arduino/AccelStepper/
 
 AT24C256 eeprom : https://github.com/dantudose/AT24C256
 
-firth set your Latitude and Longitude end on line 214 of RP2040zSunTracker.ino file.
+Update to GPS tracker: https://github.com/mikalhart/TinyGPSPlus
+
+for RTC firth set your Latitude and Longitude end on line 214 of RP2040zSunTracker.ino file.
 Then, all other set can be via BLE.
+
+for GPS, nothing to do
 
 PicozSuntracker Board v1.2:
 
